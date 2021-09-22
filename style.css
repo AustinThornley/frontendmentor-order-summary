@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: ;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: hsl(225, 100%, 98%);
+}
+
+p {
+  font-size: 16px;
+}
+
+.page-wrapper {
+  background: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-box {
+  background-color: #fff;
+  box-shadow: 5px 10px 8px rgba(136, 136, 136, 0.075);
+  border-radius: 14px;
+  max-height: 700px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.main-box img {
+  max-width: 400px;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-desc {
+  text-align: center;
+  margin: 15px 30px 30px 30px;
+  color: gray;
+}
+
+.plan-box {
+  display: flex;
+  align-items: center;
+  max-width: 357px;
+  height: 75px;
+  margin: 0 auto;
+  background: hsl(225, 100%, 98%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 14px;
+}
+
+.plan-box img {
+  margin-left: 15px;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -30px;
+}
+
+#price {
+  color: gray;
+}
+
+.change-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.change-btn a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: hsl(228, 45%, 44%);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 9px;
+  box-shadow: 5px 10px 8px rgba(136, 136, 136, 0.3);
+}
+
+.btn:hover {
+  background: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.btn-payment {
+  margin-top: 30px;
+  padding: 15px;
+  width: 357px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#cancel-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#cancel-btn:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 25px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+  .page-wrapper {
+    background: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .main-box {
+    /* margin-top: 70px; */
+    max-height: 575px;
+    max-width: 325px;
+  }
+
+  .card-title {
+    margin-top: 15px;
+  }
+
+  .card-desc {
+    margin-top: 10px;
+  }
+
+  .plan-box {
+    max-width: 274px;
+  }
+
+  .plan-details {
+    margin-left: -10px;
+  }
+
+  .btn-payment {
+    max-width: 274px;
+  }
+}
